@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sprint2.controllers.loginPageController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: turquoise;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="478.0" prefWidth="510.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label graphicTextGap="8.0" layoutX="174.0" layoutY="25.0" prefHeight="74.0" prefWidth="157.0" text="WELCOME" textAlignment="RIGHT" underline="true">
+               <font>
+                  <Font name="Georgia Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="81.0" prefHeight="95.0" prefWidth="401.0" style="-fx-background-color: white;" text="PLEASE LOGIN USING YOUR USERNAME AND PASSWORD" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="180.0" text="USERNAME:" underline="true">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="236.0" text="PASSWORD:" underline="true">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="238.0" layoutY="177.0" style="-fx-background-color: turquoise;">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="236.0" layoutY="233.0" prefHeight="18.0" prefWidth="178.0" style="-fx-background-color: turquoise;">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="login_button" layoutX="218.0" layoutY="299.0" mnemonicParsing="false" onAction="#login" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: turquoise; -fx-background-radius: 50;" text="LOGIN">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="forgot_button" layoutX="162.0" layoutY="364.0" mnemonicParsing="false" onAction="#forgotPassword" prefHeight="36.0" prefWidth="210.0" style="-fx-background-color: turquoise; -fx-background-radius: 50;" text="FORGOT PASSWORD">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
